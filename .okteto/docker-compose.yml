@@ -1,0 +1,11 @@
+version: '3.3'
+name: sfn
+services:
+  updated-again-localstack:
+    image: localstack/localstack:1.3.0
+    environment:
+      - AWS_DEFAULT_REGION=us-east-1
+    ports:
+      - "4567:4566"
+    volumes:
+      - "./s3/s3Setup.sh:/docker-entrypoint-initaws.d/s3Setup.sh"

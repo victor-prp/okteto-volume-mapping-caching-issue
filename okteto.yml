@@ -1,0 +1,6 @@
+name: sfn
+icon: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Yotpo_Logo.svg/1200px-Yotpo_Logo.svg.png
+
+deploy:
+  compose: .okteto/docker-compose.yml
+
