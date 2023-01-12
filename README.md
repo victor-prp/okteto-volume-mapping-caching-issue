@@ -5,7 +5,7 @@ When we define a service volume mapping in docker-compose,
 the data of the mapped volume is not updated even after we destroy the deployment.
 
 
-#Step to reproduce
+# Step to reproduce
 - Clone this repo
 - Run `okteto deploy`
 - Take a look at the logs of the deployed service. You expect to see the following log: `2023-01-12 10:07:54.86 UTCoriginal-localstack-5448d4ff79-h8rxsoriginal-localstackmake_bucket: original-bucket`. That means the service has created s3 bucket as defined in the s3Setup.sh file.
